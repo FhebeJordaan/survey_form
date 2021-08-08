@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">
+            Survey Form
+        </h1>
+        <p id="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, veritatis.
+        </p>
+        <form id="survey-form">
+
+            <div id="button-area">
+                <label id="gender-label">Gender:</label>
+                <input type="radio" class="radio-inline" name="gender" value="male"> Male<br>
+                <input type="radio" class="radio-inline" name="gender" value="female"> Female<br>
+                <input type="radio" class="radio-inline" name="gender" value="other"> Other<br>
+            </div>
+
+            <label id="name-label">Name:</label>
+            <input type="text" name="name" id="name" required placeholder="First Name"><br>
+
+            <label id="email-label">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="Your Email"><br>
+
+            <label id="number-label">Number:</label>
+            <input type="number" name="number" id="number" min="0" max="10" required placeholder="$"><br>
+
+            <label id="tea-label">Tea:</label>
+            <select id="dropdown" name="tea">
+                <option value="earl grey">Earl Grey</option>
+                <option value="green tea">Green Tea</option>
+                <option Value="rooibos tea">Rooibos Tea</option>
+            </select>
+
+            <div id="button-area">
+                <label id="coffee-label">Coffee:</label>
+                <input type="checkbox" name="black" value="Black"> Black<br>
+                <input type="checkbox" name="americano" value="Americano"> Americano<br>
+                <input type="checkbox" name="mocha" value="Mocha"> Mocha<br>
+                <input type="checkbox" name="expresso" value="Expresso"> Expresso<br>
+            </div>
+
+            <label id="comments">Additional Comments:</label>
+            <textarea placeholder="Additional Comments"></textarea><br>
+
+            <input type="submit" id="submit">
+        </form>
+</body>
+
+</html>
